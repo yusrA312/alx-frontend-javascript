@@ -1,14 +1,8 @@
 export default function createReportObject(employeesList) {
   return {
-    allEmployees: { ...employeesList },
-    getNumberOfDepartments: function (employeesList) {
-      let count = 0;
-      for (let key in employeesList) {
-        if (employeesList.hasOwnProperty(key)) {
-          count++;
-        }
-      }
-      return count;
+    allEmployees: { ...employeesList }, // Spread operator to copy employeesList into allEmployees
+    getNumberOfDepartments: function () { // Method to calculate number of departments
+      return Object.keys(employeesList).length;
     }
   };
 }
