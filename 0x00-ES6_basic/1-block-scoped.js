@@ -4,11 +4,8 @@ export default function taskBlock(trueOrFalse) {
   const task2 = true;
 
   if (trueOrFalse) {
-    const task = true;
-    const task2 = false;
-    bollean x = task && task2;
-    if (x)
-      return("hi")
+      const task = true;
+      const task2 = false;
   }
 
   return [task, task2];
